@@ -1,0 +1,209 @@
+// ------------------------------------FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Zilla+Slab+Highlight:wght@400;700&display=swap&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$Raleway: Raleway, sans-serif;
+$AmaticSC: Amatic SC, cursive;
+$Comfortaa: Comfortaa, cursive;
+$Exo2: Exo 2, sans-serif;
+$Merriweather: Merriweather, serif;
+$Montserrat: Montserrat, sans-serif;
+$Nunito: Nunito, sans-serif;
+$OpenSans: Open Sans, sans-serif;
+$PlayfairDisplay: Playfair Display, serif;
+$Zilla: Zilla Slab Highlight, cursive;
+
+// ------------------------------------ABSTRACT
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+  nav a{
+    margin: 0 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
+  nav a{
+    margin: 0 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 960px;
+  }
+  nav a{
+    margin: 0 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1440px;
+  }
+}
+
+$between: space-between;
+$inner: 8px 16px;
+
+a {
+  color: inherit;
+}
+
+body {
+  font: 100% $Comfortaa;
+  background-color: #EDEDED;
+}
+
+header {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 0 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 40px;
+}
+
+nav a{
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+input, input::-webkit-input-placeholder {
+  font: 100% $Comfortaa;
+  color: #343434;
+}
+
+input[type=search] {
+  outline: none;
+  border: none;
+  width: 48px;
+  margin-right: 8px;
+  background: none;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type=search]:focus {
+  outline: none;
+  border: 1px solid #343434;
+  width: 150px;
+  height: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+img{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.logo {
+  display: inherit;
+  justify-content: center;
+  font: 100% $Zilla;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1A1A1A;
+}
+
+.search{
+  position: absolute;
+  display: flex;
+  top: 16px;
+  right: 16px;
+}
+
+.search img{
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+
+.search__input::-moz-placeholder {
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  color: #000000;opacity: 1;
+}
+
+
+
+.row{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.welcome-info{
+  display: flex;
+  width: 640px;
+  margin-top: 20vh;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+.welcome-info__text{
+  background-color: black;
+  padding: 4px 8px;
+  h2{
+    background: linear-gradient(120deg, rgba(243,220,251,1) 0%, rgba(103,159,228,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+}
+
+.welcome-info__btn{
+  margin-top: 24px;
+  background: black;
+  color: white;
+
+  &:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  a{
+    font-size: x-large;
+    padding: 8px;
+    font-weight: bolder;
+  }
+}
+
+.gallery{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gallery__desktop{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 868px;
+}
+
+.gallery__block{
+  background: rgb(255,226,130);
+  background: linear-gradient(167deg, rgba(255,226,130,1) 0%, rgba(137,255,125,1) 43%, rgba(0,212,255,1) 90%);
+  width: inherit;
+  height: inherit;
+}
+
+.gallery__block img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}

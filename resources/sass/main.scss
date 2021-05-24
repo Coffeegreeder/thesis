@@ -1,0 +1,192 @@
+// ------------------------------------FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$Raleway: Raleway, sans-serif;
+$AmaticSC: Amatic SC, cursive;
+$Comfortaa: Comfortaa, cursive;
+$Exo2: Exo 2, sans-serif;
+$Merriweather: Merriweather, serif;
+$Montserrat: Montserrat, sans-serif;
+$Nunito: Nunito, sans-serif;
+$OpenSans: Open Sans, sans-serif;
+$PlayfairDisplay: Playfair Display, serif;
+
+// ------------------------------------ABSTRACT
+
+$between: space-between;
+$inner: 8px 16px;
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+// ------------------------------------COLORS
+
+$main: #737373;
+$second: #A3A3A3;
+$third: #DCDCDC;
+$fourth: #090909;
+$fifth: #F0F0F0;
+
+:root{
+  --main: #737373;
+  --second: #A3A3A3;
+  --third: #DCDCDC;
+  --fourth: #090909;
+  --fifth: #F0F0F0;
+}
+
+// ------------------------------------HEADER
+
+body{
+  font: 100% $OpenSans;
+}
+
+.header-top {
+  width: 100%;
+  background: $third;
+  color: $main;
+}
+
+.header-top-1 {
+  width: 100%;
+  color: $main;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.header-top__content {
+  display: flex;
+  justify-content: $between;
+  align-items: center;
+  padding: $inner;
+}
+
+.header-top-1__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $inner;
+}
+
+.logo {
+  width: 120px;
+}
+
+.logo__pic {
+  width: 120px;
+  img {
+
+    object-fit: cover;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+
+  a {
+    margin: 8px;
+  }
+}
+
+.navigation-1 {
+  position: fixed;
+  right: 8px;
+  top: 8px;
+
+  a {
+    margin: 8px;
+  }
+}
+
+.navigation__links {
+  display: flex;
+  justify-content: $between;
+
+  a {
+    text-decoration: none;
+    color: $main;
+
+    &:hover {
+      color: $fourth;
+    }
+  }
+}
+
+.navigation__social{
+  margin-left: 32px;
+
+  li{
+    padding: 4px 0;
+  }
+}
+
+ .navigation__icons{
+   width: 24px;
+ }
+
+ .welcome-info{
+   display: flex;
+   width: 640px;
+   margin-top: 20vh;
+   justify-content: end;
+   flex-wrap: wrap;
+ }
+
+ .welcome-info__text{
+   background-color: black;
+   padding: 4px 8px;
+   h2{
+     background: linear-gradient(120deg, rgba(243,220,251,1) 0%, rgba(103,159,228,1) 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     display: inline-block;
+   }
+ }
+
+ .welcome-info__btn{
+   margin-top: 24px;
+   background: black;
+   color: white;
+
+   &:hover{
+     background: white;
+     color: black;
+     border: 1px solid black;
+   }
+
+   a{
+     font-size: x-large;
+     padding: 8px;
+     font-weight: bolder;
+   }
+ }
+
+
+// ------------------------------------FOOTER
