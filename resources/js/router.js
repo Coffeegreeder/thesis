@@ -3,22 +3,22 @@ import Vue from 'vue';
 
 Vue.use(vueRouter);
 
-import Index from "./views/Index";
-import Create from "./views/Create";
-import About from "./views/About";
+import IndexPage from "./views/IndexPage";
+import CreatePage from "./views/CreatePage";
+import AboutPage from "./views/AboutPage";
 
 const routes = [
   {
     path: "/",
-    component: Index
+    component: IndexPage
   },
    {
      path: "/create",
-     component: Create
+     component: CreatePage
    },
    {
      path: "/about",
-     component: About
+     component: AboutPage
    }
 ];
 

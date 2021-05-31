@@ -1,10 +1,10 @@
 <template>
     <div>
-      test
+      Проверка 2dfd
     </div>
 </template>
 <script>
     export default {
-        name: "Create"
+        name: "AboutPage"
     }
 </script>
