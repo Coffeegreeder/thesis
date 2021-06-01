@@ -1,5 +1,6 @@
 import vueRouter from 'vue-router';
 import Vue from 'vue';
+import Lodash from 'lodash';
 
 Vue.use(vueRouter);
 
