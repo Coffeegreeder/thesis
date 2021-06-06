@@ -1,22 +1,20 @@
 <template>
     <div class="testus">
-      <!-- <FirstQuestion
-        v-for="question in questions"
-        :key="question.page"
-        :testing="question"
-        @sendCount="showData" /> -->
+      <!-- <FirstQuestion /> -->
 
         <div
         class="s"
         v-for="question in questions"
         :key="question.page">
-            <div class="item" v-if="question.page == current_page">
+            <div class="item" v-if="question.page == page">
                 <h1>{{ question.page }}</h1>
-                <div class="label"> {{current_page}}</div>
-                <div class="label">3</div>
+                <div class="label" @click="forward"> {{question.task_1}}</div>
+                <div class="label" @click="forward"> {{question.task_2}}</div>
+                <div v-if="question.task_3" class="label" @click="forward"> {{question.task_3}}</div>
             </div>
         </div>
-        <button class="label" @click="counter"> {{current_page}} </button>
+        <button v-if="page != 1" class="label" @click="back"> Назад </button>
+
     </div>
 </template>
 <script>
@@ -32,23 +30,37 @@
                 questions: [
                     {
                         page: 1,
-                        task: 'checkin',
+                        task_1: 'checkin',
+                        task_2: 'puckinckin',
+                        task_3: 'looking',
                     },
                     {
                         page: 2,
-                        task: 'non',
+                        task_1: 'non',
+                        task_2: 'вопросус',
+                        task_3: '',
                     }
                 ],
-                current_page: 1
             }
         },
         methods: {
-            showData(data){
-                console.log(data)
+            incrementX () {
+              this.$store.commit('incrementX')
             },
-            counter(current_page){
-                this.current_page++
+            forward () {
+              this.$store.commit('forward')
+            },
+            back () {
+            	this.$store.commit('back')
             }
-        }
+        },
+        computed: {
+            page () {
+	            return this.$store.state.page
+            },
+            x () {
+              return this.$store.state.x
+            }
+  },
     }
 </script>

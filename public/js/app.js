@@ -1949,8 +1949,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "CreatePage",
@@ -1961,20 +1959,34 @@ __webpack_require__.r(__webpack_exports__);
     return {
       questions: [{
         page: 1,
-        task: 'checkin'
+        task_1: 'checkin',
+        task_2: 'puckinckin',
+        task_3: 'looking'
       }, {
         page: 2,
-        task: 'non'
-      }],
-      current_page: 1
+        task_1: 'non',
+        task_2: 'вопросус',
+        task_3: ''
+      }]
     };
   },
   methods: {
-    showData: function showData(data) {
-      console.log(data);
+    incrementX: function incrementX() {
+      this.$store.commit('incrementX');
     },
-    counter: function counter(current_page) {
-      this.current_page++;
+    forward: function forward() {
+      this.$store.commit('forward');
+    },
+    back: function back() {
+      this.$store.commit('back');
+    }
+  },
+  computed: {
+    page: function page() {
+      return this.$store.state.page;
+    },
+    x: function x() {
+      return this.$store.state.x;
     }
   }
 });
@@ -2064,7 +2076,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./router */ "./resources/js/router.js");
-/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store/index */ "./resources/js/store/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store */ "./resources/js/store/index.js");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -2097,7 +2109,7 @@ Vue.component('v-nav', __webpack_require__(/*! ./components/Nav.vue */ "./resour
 var app = new Vue({
   el: '#app',
   router: _router__WEBPACK_IMPORTED_MODULE_0__.default,
-  store: _store_index__WEBPACK_IMPORTED_MODULE_1__.default
+  store: _store__WEBPACK_IMPORTED_MODULE_1__.default
 });
 
 /***/ }),
@@ -2204,19 +2216,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vuex__WEBPACK_IMPORTED_MODULE_1__.default);
-var store = new vuex__WEBPACK_IMPORTED_MODULE_1__.default.Store({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_1__.default.Store({
   state: {
-    count: 0
+    page: 1,
+    // переменная отвечает за текущую страницу
+    x: 0,
+    y: 0
   },
   mutations: {
-    increment: function increment(state) {
-      state.count++;
+    incrementX: function incrementX(state) {
+      return state.x++;
+    },
+    forward: function forward(state) {
+      return state.page++;
+    },
+    back: function back(state) {
+      return state.page--;
     }
-  }
-});
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_1__.default.Store({
-  modules: {
-    store: store
   }
 }));
 
@@ -38174,23 +38190,39 @@ var render = function() {
     [
       _vm._l(_vm.questions, function(question) {
         return _c("div", { key: question.page, staticClass: "s" }, [
-          question.page == _vm.current_page
+          question.page == _vm.page
             ? _c("div", { staticClass: "item" }, [
                 _c("h1", [_vm._v(_vm._s(question.page))]),
                 _vm._v(" "),
-                _c("div", { staticClass: "label" }, [
-                  _vm._v(" " + _vm._s(_vm.current_page))
-                ]),
+                _c(
+                  "div",
+                  { staticClass: "label", on: { click: _vm.forward } },
+                  [_vm._v(" " + _vm._s(question.task_1))]
+                ),
                 _vm._v(" "),
-                _c("div", { staticClass: "label" }, [_vm._v("3")])
+                _c(
+                  "div",
+                  { staticClass: "label", on: { click: _vm.forward } },
+                  [_vm._v(" " + _vm._s(question.task_2))]
+                ),
+                _vm._v(" "),
+                question.task_3
+                  ? _c(
+                      "div",
+                      { staticClass: "label", on: { click: _vm.forward } },
+                      [_vm._v(" " + _vm._s(question.task_3))]
+                    )
+                  : _vm._e()
               ])
             : _vm._e()
         ])
       }),
       _vm._v(" "),
-      _c("button", { staticClass: "label", on: { click: _vm.counter } }, [
-        _vm._v(" " + _vm._s(_vm.current_page) + " ")
-      ])
+      _vm.page != 1
+        ? _c("button", { staticClass: "label", on: { click: _vm.back } }, [
+            _vm._v(" Назад ")
+          ])
+        : _vm._e()
     ],
     2
   )

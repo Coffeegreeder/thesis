@@ -31,7 +31,7 @@ Vue.component('v-nav', require('./components/Nav.vue').default);
  */
 
  import router from "./router";
- import store from "./store/index";
+ import store from "./store";
 
  const app = new Vue({
      el: '#app',

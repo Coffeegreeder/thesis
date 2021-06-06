@@ -3,20 +3,15 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const store = new Vuex.Store({
-  state: {
-    count: 0
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  }
-})
-
-
 export default new Vuex.Store({
-  modules: {
-    store
-  }
+  state: {
+      page: 1,  // переменная отвечает за текущую страницу
+      x: 0,
+      y: 0
+    },
+    mutations: {
+        incrementX: state => state.x++,
+      	forward: state => state.page++,
+        back: state => state.page--,
+      }
 });
