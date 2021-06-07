@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div v-for="link in links">
+    <div class="nav__links" v-for="link in links">
       <router-link :to="link.href"> {{ link.title }}</router-link>
     </div>
   </nav>

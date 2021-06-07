@@ -1,4 +1,5 @@
 <template>
+    <div class="frame">
     <Gallery v-if="x < 0 && y == 0" />
     <Blog v-else-if="x < 0 && y > 0"/>
     <Media v-else-if="x == 0 && y > 0"/>
@@ -8,6 +9,7 @@
     <Donat v-else-if="x == 0 && y < 0"/>
     <Visitcard v-else-if="x < 0 && y < 0"/>
     <Empty v-else-if="x == 0 && y == 0"/>
+    </div>
 </template>
 
 <script>

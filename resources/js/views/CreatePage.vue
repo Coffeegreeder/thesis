@@ -9,26 +9,26 @@
                 <h2> Вопрос - {{ question.page }} из 15</h2>
                 <!-- ещё один v-if для проверки x баллов для функции increment -->
                 <div v-if="page <= 3">
-                  <div class="label" @click="incrementX"> {{question.task_1}}</div>
-                  <div v-if="question.task_2" class="label" @click="forward"> {{question.task_2}}</div>
-                  <div v-if="question.task_3" class="label" @click="decrementX"> {{question.task_3}}</div>
+                  <div class="question-btn" @click="incrementX"> {{question.task_1}}</div>
+                  <div v-if="question.task_2" class="question-btn" @click="forward"> {{question.task_2}}</div>
+                  <div v-if="question.task_3" class="question-btn" @click="decrementX"> {{question.task_3}}</div>
                 </div>
                 <div v-if="page > 3 && page <= 6">
-                  <div class="label" @click="incrementY">Y пошёл {{question.task_1}}</div>
-                  <div v-if="question.task_2" class="label" @click="forward"> {{question.task_2}}</div>
-                  <div v-if="question.task_3" class="label" @click="decrementY"> {{question.task_3}}</div>
+                  <div class="question-btn" @click="incrementY">Y пошёл {{question.task_1}}</div>
+                  <div v-if="question.task_2" class="question-btn" @click="forward"> {{question.task_2}}</div>
+                  <div v-if="question.task_3" class="question-btn" @click="decrementY"> {{question.task_3}}</div>
                 </div>
                 <div v-if="page > 6">
-                  <div class="label" @click="incrementY">Стили {{question.task_1}}</div>
-                  <div v-if="question.task_2" class="label" @click="forward"> {{question.task_2}}</div>
-                  <div v-if="question.task_3" class="label" @click="decrementY"> {{question.task_3}}</div>
+                  <div class="question-btn" @click="incrementY">Стили {{question.task_1}}</div>
+                  <div v-if="question.task_2" class="question-btn" @click="forward"> {{question.task_2}}</div>
+                  <div v-if="question.task_3" class="question-btn" @click="decrementY"> {{question.task_3}}</div>
                 </div>
             </div>
         </div>
-        <button v-if="page != 1 && page < 16" class="label" @click="refresh"> Сбросить </button>
+        <button v-if="page != 1 && page < 16" class="question-btn" @click="refresh"> Сбросить </button>
         <Result v-if="page == 16" />
-        <button class="label"> x: {{x}} </button>
-        <button class="label"> y: {{y}} </button>
+        <div class="question-btn"> x: {{x}} </div>
+        <div class="question-btn"> y: {{y}} </div>
 
     </div>
 </template>
