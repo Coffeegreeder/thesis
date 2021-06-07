@@ -3,7 +3,6 @@
       <!-- <Result /> -->
 
         <div
-        class="s"
         v-for="question in questions"
         :key="question.page">
             <div class="item" v-if="question.page == page">
@@ -28,13 +27,13 @@
         </div>
         <button v-if="page != 1 && page < 16" class="label" @click="refresh"> Сбросить </button>
         <Result v-if="page == 16" />
-        <button class="label"> {{x}} </button>
-        <button class="label"> {{y}} </button>
+        <button class="label"> x: {{x}} </button>
+        <button class="label"> y: {{y}} </button>
 
     </div>
 </template>
 <script>
-    import Result from './Templates.vue'
+    import Result from './TemplateViewer.vue'
 
     export default {
         name: "CreatePage",
