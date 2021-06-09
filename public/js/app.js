@@ -1912,6 +1912,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "AboutPage"
 });
@@ -39899,9 +39909,22 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  Проверка 2dfd\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "info-text" }, [
+      _c("div", { staticClass: "col-8" }, [
+        _vm._v(
+          "\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac pretium nisl. Proin iaculis mauris at lorem fringilla, sit amet vehicula erat fringilla. Suspendisse rhoncus rhoncus maximus. Nam sit amet diam luctus, sollicitudin dui ut, auctor massa. Sed eget pulvinar neque, sed finibus diam. Quisque ullamcorper lorem justo, ut congue mi posuere sed. Vestibulum ac turpis ut mauris accumsan varius nec et magna. Donec non leo lectus. Aliquam erat volutpat.\n\n    Praesent elementum hendrerit ex in maximus. Praesent id viverra erat. Aliquam et facilisis ipsum. Pellentesque porttitor a nisi vel facilisis. Etiam at nisi tellus. Pellentesque nec elementum nunc. Nullam rhoncus luctus sapien sed elementum. Donec tempus, est bibendum iaculis gravida, ex leo aliquam quam, nec hendrerit leo risus at sem. Cras ultrices purus ac luctus semper. Aliquam sapien urna, maximus a elit a, efficitur tincidunt leo. Morbi sit amet maximus arcu, quis convallis nisl. Aliquam aliquet bibendum massa non lacinia. Vestibulum lectus sem, dignissim in molestie vitae, pellentesque non nibh. Proin posuere velit eget massa commodo, dapibus aliquam velit varius. Nam hendrerit ullamcorper augue, et vulputate ipsum faucibus vitae.\n\n    Nulla aliquet purus sit amet mauris imperdiet tincidunt. Pellentesque orci nunc, rhoncus at dui at, dictum aliquam lectus. Vivamus id turpis eu ipsum faucibus sodales. Aenean sed diam erat. Sed condimentum imperdiet lobortis. Ut quam velit, pharetra vitae aliquet nec, placerat quis elit. Quisque bibendum commodo elit, vel cursus tellus luctus vitae. Integer pulvinar sollicitudin urna, id lobortis nulla auctor sit amet.\n\n    Donec urna mauris, sollicitudin ac mauris ac, bibendum semper nibh. Praesent lobortis ex velit. Nullam euismod ornare neque ut lobortis. Donec bibendum, ipsum sit amet placerat tempus, risus nisi vestibulum lorem, sit amet aliquam eros turpis sit amet velit. Fusce nec vulputate massa. Integer at consectetur massa. Sed sit amet sapien ac nulla aliquet scelerisque eu ut mauris. Donec varius fermentum urna non porta. Integer eu nibh non mi iaculis rhoncus ac sed est. Praesent accumsan fringilla nibh, nec mollis nisl euismod in.\n\n    Vivamus facilisis eros quam. In luctus ex a eros molestie convallis. Ut tincidunt tincidunt quam, quis sollicitudin dolor lacinia ut. Duis iaculis vehicula hendrerit. Quisque sed pellentesque odio. Suspendisse condimentum neque orci, in porttitor lorem fringilla auctor. Duis malesuada nisi sit amet rutrum vulputate.\n"
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -39931,7 +39954,7 @@ var render = function() {
       _vm._l(_vm.questions, function(question) {
         return _c("div", { key: question.page }, [
           question.page == _vm.page
-            ? _c("div", { staticClass: "item" }, [
+            ? _c("div", { staticClass: "item noselect" }, [
                 _c("h2", [
                   _vm._v(" Вопрос - " + _vm._s(question.page) + " из 15")
                 ]),
@@ -40055,13 +40078,9 @@ var render = function() {
       _vm._v(" "),
       _vm.page == 16 ? _c("Result") : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "question-btn" }, [
-        _vm._v(" x: " + _vm._s(_vm.x) + " ")
-      ]),
+      _c("div", {}, [_vm._v(" x: " + _vm._s(_vm.x) + " ")]),
       _vm._v(" "),
-      _c("div", { staticClass: "question-btn" }, [
-        _vm._v(" y: " + _vm._s(_vm.y) + " ")
-      ])
+      _c("div", {}, [_vm._v(" y: " + _vm._s(_vm.y) + " ")])
     ],
     2
   )

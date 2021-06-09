@@ -151,42 +151,6 @@ body{
    width: 24px;
  }
 
- .welcome-info{
-   display: flex;
-   width: 640px;
-   margin-top: 20vh;
-   justify-content: end;
-   flex-wrap: wrap;
- }
-
- .welcome-info__text{
-   background-color: black;
-   padding: 4px 8px;
-   h2{
-     background: linear-gradient(120deg, rgba(243,220,251,1) 0%, rgba(103,159,228,1) 100%);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     display: inline-block;
-   }
- }
-
- .welcome-info__btn{
-   margin-top: 24px;
-   background: black;
-   color: white;
-
-   &:hover{
-     background: white;
-     color: black;
-     border: 1px solid black;
-   }
-
-   a{
-     font-size: x-large;
-     padding: 8px;
-     font-weight: bolder;
-   }
- }
 
 
 // ------------------------------------FOOTER

@@ -5,7 +5,7 @@
         <div
         v-for="question in questions"
         :key="question.page">
-            <div class="item" v-if="question.page == page">
+            <div class="item noselect" v-if="question.page == page">
                 <h2> Вопрос - {{ question.page }} из 15</h2>
                 <!-- ещё один v-if для проверки x баллов для функции increment -->
                 <div v-if="page <= 3">
@@ -27,8 +27,8 @@
         </div>
         <button v-if="page != 1 && page < 16" class="question-btn" @click="refresh"> Сбросить </button>
         <Result v-if="page == 16" />
-        <div class="question-btn"> x: {{x}} </div>
-        <div class="question-btn"> y: {{y}} </div>
+        <div class=""> x: {{x}} </div>
+        <div class=""> y: {{y}} </div>
 
     </div>
 </template>

@@ -119,38 +119,3 @@ body {
 .navigation__icons {
   width: 24px;
 }
-
-.welcome-info {
-  display: flex;
-  width: 640px;
-  margin-top: 20vh;
-  justify-content: end;
-  flex-wrap: wrap;
-}
-
-.welcome-info__text {
-  background-color: black;
-  padding: 4px 8px;
-}
-.welcome-info__text h2 {
-  background: linear-gradient(120deg, #f3dcfb 0%, #679fe4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-.welcome-info__btn {
-  margin-top: 24px;
-  background: black;
-  color: white;
-}
-.welcome-info__btn:hover {
-  background: white;
-  color: black;
-  border: 1px solid black;
-}
-.welcome-info__btn a {
-  font-size: x-large;
-  padding: 8px;
-  font-weight: bolder;
-}
