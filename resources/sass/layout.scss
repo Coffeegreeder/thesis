@@ -20,6 +20,12 @@ $Zilla: Zilla Slab Highlight, cursive;
   margin-left: auto;
 }
 
+canvas {
+  position: absolute;
+  z-index:-2;
+  top: 0;
+}
+
 @media (min-width: 576px) {
   .container{
     max-width: 540px;
@@ -62,9 +68,11 @@ a {
 
 body {
   background-color: #EDEDED;
+  min-height: 100vh;
+  overflow-y: hidden;
 }
 
-header {
+.layout-header {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
@@ -112,7 +120,7 @@ img{
   font-size: 30px;
   line-height: 36px;
   color: #1A1A1A;
-  a{
+  a, a:hover, a:focus, a:active{
       color: #1A1A1A;
   }
 }
@@ -241,6 +249,15 @@ img{
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.back{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: #EDEDED;
+  left: 0;
+  top: 0;
 }

@@ -1,16 +1,44 @@
 <template>
+  <div class="">
     <div class="frame">
-    <Gallery v-if="x < 0 && y == 0" />
-    <Blog v-else-if="x < 0 && y > 0"/>
-    <Media v-else-if="x == 0 && y > 0"/>
-    <Shop v-else-if="x > 0 && y > 0"/>
-    <Services v-else-if="x > 0 && y == 0"/>
-    <Promo v-else-if="x > 0 && y < 0"/>
-    <Donat v-else-if="x == 0 && y < 0"/>
-    <Visitcard v-else-if="x < 0 && y < 0"/>
-    <Empty v-else-if="x == 0 && y == 0"/>
+      <Gallery v-if="x < 0 && y == 0" />
+      <Blog v-else-if="x < 0 && y > 0"/>
+      <Media v-else-if="x == 0 && y > 0"/>
+      <Shop v-else-if="x > 0 && y > 0"/>
+      <Services v-else-if="x > 0 && y == 0"/>
+      <Promo v-else-if="x > 0 && y < 0"/>
+      <Donat v-else-if="x == 0 && y < 0"/>
+      <Visitcard v-else-if="x < 0 && y < 0"/>
+      <Empty v-else-if="x == 0 && y == 0"/>
     </div>
+
+      <button class="question-btn" @click="refresh"> Сбросить </button>
+    </div>
+
 </template>
+
+<script language="JavaScript" type="text/javascript">
+fimg = document.images;
+ for(j=0;j<fimg.length;j++){
+fimg[j].galleryimg = "no";
+fimg[j].oncontextmenu = function(){return false;}
+fimg[j].ondragstart = function(){return false;}
+}
+</script>
+
+<script>
+  $(function() { //DOM Ready
+
+    $("section").gridster({
+      widget_margins: [0, 0],
+      widget_base_dimensions: [124, 124],
+      max_cols: 7,
+      max_rows: 5,
+      // widget_selector: ">li",
+      avoid_overlapped_widgets: true
+    }).data('gridster').disable();
+  });
+</script>
 
 <script>
     import Gallery from './v-templates/gallery';

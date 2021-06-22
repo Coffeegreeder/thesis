@@ -1,37 +1,184 @@
 <template>
-<html>
-<head>
-  <link href="cover.css" rel="stylesheet">
-</head>
-<body>
-<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <html lang="ru">
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-    </p>
-  </main>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
+      <!-- Custom CSS -->
+      <link href="css/promoTemplate/style.css" rel="stylesheet">
+  </head>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    </div>
-  </footer>
-</div>
-</body>
-</html>
+  <body id="v-view">
+  <!-- ============================================================== -->
+  <!-- Main wrapper -->
+  <!-- ============================================================== -->
+      <div id="main-wrapper">
+          <!-- ============================================================== -->
+          <!-- Header part -->
+          <!-- ============================================================== -->
+          <header class="py-3 bg-white">
+              <div class="container">
+                  <!-- Start Header -->
+                  <div class="header">
+                      <nav class="navbar navbar-expand-md navbar-light px-0">
+                          <a class="navbar-brand" href="#">
+                              <img src=" " alt="logo">
+                              <span>
+                                  <img src=" " alt="logo">
+                              </span>
+                          </a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item pr-3">
+                                      <a href="https://wrappixel.com/templates/elite-angular-lite/#comparison" class="btn btn-custom btn-outline-info btn-lg" target="_blank">Free Download</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="https://wrappixel.com/templates/elite-angular-admin/?ref=33" class="btn btn-custom btn-info btn-lg" target="_blank">Check Pro Version</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+                  <!-- End Header -->
+              </div>
+          </header>
+          <!-- ============================================================== -->
+          <!-- Header part -->
+          <!-- ============================================================== -->
+
+          <!-- ============================================================== -->
+          <!-- Page wrapper part -->
+          <!-- ============================================================== -->
+          <div class="content-wrapper">
+              <!-- ============================================================== -->
+              <!-- Demos part -->
+              <!-- ============================================================== -->
+              <section class="spacer bg-light">
+                  <div class="container">
+                      <div class="row justify-content-md-center pt-5">
+                          <div class="col-md-9 text-center">
+                              <h2 class="text-dark">Create Stunning User Inteface for your <span class="font-weight-bold">Applications</span> & <span class="font-weight-bold">Products</span> with <span class="border-bottom border-dark"> Elite Admin</span></h2>
+                          </div>
+                      </div>
+                      <div class="row py-5">
+                          <!-- ============================================================== -->
+                          <!-- Lite Demo -->
+                          <!-- ============================================================== -->
+                          <div class="col-md-6">
+                              <div class="card p-2 mr-1">
+                                  <div class="card-body p-4">
+                                      <div class="text-center">
+                                          <h2 class="text-dark font-weight-medium">Lite Version</h2>
+                                          <h4 class="text-success">Free Forever</h4>
+                                      </div>
+                                      <div class="live-box text-center mt-4">
+                                          <img class="img-fluid" src="assets/images/elite-ang-lite-lp-img.jpg" alt="Lite version">
+                                          <div class="overlay">
+                                              <a class="btn btn-danger live-btn" href="https://wrappixel.com/demos/angular-admin-templates/elite-angular-lite/angular/component/cards" target="_blank">Live Preview</a>
+                                          </div>
+                                      </div>
+                                      <p class="text-muted mt-5 line-h33 font-16">Elite Admin Lite is basic yet very useful angular dashbaord template for your projects.If you are looking for modern yet clean admin template for your backend project. Elite Admin is the right choice for you. If your application requires more options. We like to suggest you the pro version.</p>
+                                      <div class="row text-muted  mt-4">
+                                          <div class="col-md-6">
+                                              <ul class="list-unstyled listing">
+                                                  <li><i class="mdi mdi-disk"></i>7+ Pages Template</li>
+                                                  <li><i class="mdi mdi-disk"></i>10+ UI Components</li>
+                                                  <li><i class="mdi mdi-disk"></i>Angular 8 Version</li>
+                                                  <li><i class="mdi mdi-disk"></i>SaSS Base CSS</li>
+                                                  <li><i class="mdi mdi-disk"></i>Font Awesome Icons</li>
+                                                  <li><i class="mdi mdi-disk"></i>Fully Responsive Pages</li>
+                                                  <li class="text-dark"><i class="mdi mdi-disk"></i>No Support Provided</li>
+                                              </ul>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <ul class="list-unstyled listing">
+                                                  <li><i class="mdi mdi-disk"></i>Easy To Customize</li>
+                                                  <li><i class="mdi mdi-disk"></i>Basic Table Examples</li>
+                                                  <li><i class="mdi mdi-disk"></i>Profile Page Included</li>
+                                                  <li><i class="mdi mdi-disk"></i>Google Map</li>
+                                                  <li class="text-dark "><i class="mdi mdi-disk"></i>No Documentation</li>
+                                                  <li class="text-dark"><i class="mdi mdi-disk"></i>Backlink Required</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="text-center mt-4 mb-3">
+                                          <a href="#" class="btn btn-custom btn-outline-info btn-lg" target="_blank">Free Download</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ============================================================== -->
+                          <!-- Pro Demo -->
+                          <!-- ============================================================== -->
+                          <div class="col-md-6">
+                              <div class="card pro-demo p-2 ml-1">
+                                  <div class="card-body p-4">
+                                      <div class="text-center">
+                                          <h2 class="text-info font-weight-medium">Pro Version</h2>
+                                          <h4 class="text-dark">$39 Only</h4>
+                                      </div>
+                                      <div class="live-box text-center mt-4">
+                                          <img class="img-fluid" src="assets/images/elite-ang-pro-lp-img.jpg" alt="Pro version">
+                                          <div class="overlay">
+                                              <a class="btn btn-danger live-btn" href="https://wrappixel.com/demos/angular-admin-templates/elite-angular/landingpage/" target="_blank">Live Preview</a>
+                                          </div>
+                                      </div>
+                                      <div class="row text-dark mt-5">
+                                          <div class="col-md-6">
+                                              <ul class="list-unstyled listing">
+                                                  <li><i class="mdi mdi-disk text-info"></i>3 Colorful Dashboards</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>1500+ Page Templates</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>500+ UI Components</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>100+ Integrated Plugins</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Front-end Landing Page</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>1 Year Premium Support</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Unlimited Colors</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>2000+ Font Icons</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Lots of Chart Options</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Angular 8 Version</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Fully Responsive Pages</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>& lots more..</li>
+                                              </ul>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <ul class="list-unstyled listing">
+                                                  <li><i class="mdi mdi-disk text-info"></i>4+ Unique Demos</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>3+ Ready to Use App</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Light and Dark Sidebar</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Dashboard PSD Files</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Lifetime Free Updates</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Documentation Provided</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Lots of Widgets</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Tons of Table Example</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Variety of Forms Included</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>SaSS Base CSS</li>
+                                                  <li><i class="mdi mdi-disk text-info"></i>Easy to Customize</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="text-center mt-4 mb-3">
+                                          <a href="#" class="btn btn-custom btn-info btn-lg" target="_blank">Buy Pro Version</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End page wrapperHeader part -->
+          <!-- ============================================================== -->
+          <footer class="text-center p-4"> All Rights Reserved by Elite Admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.</footer>
+      </div>
+  </body>
+  </html>
 </template>
 
 <script>
@@ -49,6 +196,18 @@ export default {
     methods: {
 
     },
+    mounted(){
+    let jqueryScript = document.createElement('script')
+    let popperScript = document.createElement('script')
+    let bootstrapScript = document.createElement('script')
+    jqueryScript.setAttribute('src', 'js/promoTemplate/jquery/dist/jquery.min.js')
+    popperScript.setAttribute('src', 'js/promoTemplate/popper.js/dist/umd/popper.min.js')
+    bootstrapScript.setAttribute('src', 'js/promoTemplate/bootstrap/dist/js/bootstrap.min.js')
+    document.getElementById('v-view').appendChild(jqueryScript)
+    document.getElementById('v-view').appendChild(popperScript)
+    document.getElementById('v-view').appendChild(bootstrapScript)
+
+  },
     computed: {
         page () {
             return this.$store.state.page
